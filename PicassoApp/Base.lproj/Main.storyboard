@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PicassoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qig-jh-NJa" userLabel="MainCanvas">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NaD-2h-L9X" userLabel="TempCanvas">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pwp-Bh-x83">
+                                <rect key="frame" x="0.0" y="605" width="375" height="54"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENs-lU-NWZ">
+                                        <rect key="frame" x="18" y="0.0" width="340" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsz-x7-4Tu" userLabel="Share Button">
+                                                <rect key="frame" x="69" y="5" width="28" height="38"/>
+                                                <state key="normal" image="share.png"/>
+                                                <connections>
+                                                    <action selector="shareMyArt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orV-qs-vKe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvm-b0-Kxc" userLabel="Settings Button">
+                                                <rect key="frame" x="138" y="1" width="65" height="45"/>
+                                                <state key="normal" image="brush_pallet.png"/>
+                                                <connections>
+                                                    <action selector="pressedSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jhR-tN-Wyo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUL-cM-hwv" userLabel="Reset Button">
+                                                <rect key="frame" x="-3" y="5" width="44" height="44"/>
+                                                <state key="normal" image="trash_recyclebin_empty_closed.png"/>
+                                                <connections>
+                                                    <action selector="resetCanvas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GuQ-WS-qeA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yph-5T-ZnV" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                                <rect key="frame" x="226" y="5" width="106" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Undo">
+                                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="undoLastAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FEh-VZ-cwj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NaD-2h-L9X" secondAttribute="trailing" id="6mp-TX-0jk"/>
+                            <constraint firstItem="qig-jh-NJa" firstAttribute="leading" secondItem="NaD-2h-L9X" secondAttribute="leading" id="8vN-Q5-UpL"/>
+                            <constraint firstItem="qig-jh-NJa" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="HtR-VR-1KW"/>
+                            <constraint firstItem="NaD-2h-L9X" firstAttribute="top" secondItem="qig-jh-NJa" secondAttribute="top" id="IqY-xd-Zyh"/>
+                            <constraint firstItem="NaD-2h-L9X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QKQ-ZL-Mn1"/>
+                            <constraint firstItem="qig-jh-NJa" firstAttribute="trailing" secondItem="NaD-2h-L9X" secondAttribute="trailing" id="TkC-VT-pzT"/>
+                            <constraint firstItem="NaD-2h-L9X" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Zcn-7p-gFL"/>
+                            <constraint firstItem="NaD-2h-L9X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cvc-ZW-kJh"/>
+                            <constraint firstItem="Pwp-Bh-x83" firstAttribute="top" secondItem="NaD-2h-L9X" secondAttribute="bottom" constant="-62" id="dD8-Rr-0C5"/>
+                            <constraint firstItem="Pwp-Bh-x83" firstAttribute="width" secondItem="NaD-2h-L9X" secondAttribute="width" id="nhU-05-hf9"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="brushPreviewImage" destination="gTL-4S-B0X" id="7Xd-Ji-UOc"/>
+                        <outlet property="brushSlider" destination="VIs-At-ohN" id="rhr-0E-WaN"/>
+                        <outlet property="mainCanvas" destination="qig-jh-NJa" id="r1r-cj-IwV"/>
+                        <outlet property="settingsView" destination="Uw2-iX-iRe" id="D3f-fs-qt7"/>
+                        <outlet property="tempCanvas" destination="NaD-2h-L9X" id="yPC-MG-0Qv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view alpha="0.84999999999999998" contentMode="scaleToFill" id="Uw2-iX-iRe" userLabel="SettingsView">
+                    <rect key="frame" x="0.0" y="0.0" width="356" height="245"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CAd-Tj-n2O">
+                            <rect key="frame" x="43" y="46" width="270" height="90"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="59U-QA-vtv">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="30"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8T-oo-2N8" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3O0-FX-h9H"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2l-fl-OJh" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5cJ-AJ-kXs"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkB-DF-yma" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rTJ-cc-dpy"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzQ-AB-nG0" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="180" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" red="0.40000000000000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7IZ-6R-EXO"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJG-7Z-gSc" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="240" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8p-JV-NVB"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gr4-2Q-IFA">
+                                    <rect key="frame" x="0.0" y="60" width="270" height="30"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAK-19-nGO" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cxw-Hg-CgZ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjG-9e-CCw" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MpU-6C-0L6"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbE-qU-dAF" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbu-Q9-r2Y"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6He-Cv-TWO" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="180" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" red="0.62745098039215685" green="0.32156862745098036" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9LJ-Z4-PfD"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjD-lv-Pmb" customClass="CustomButton" customModule="PicassoApp" customModuleProvider="target">
+                                            <rect key="frame" x="240" y="0.0" width="30" height="30"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="changeBrushColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uit-Qq-zNW"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7J-Gu-Aah">
+                            <rect key="frame" x="0.0" y="0.0" width="356" height="30"/>
+                            <state key="normal" title="C L O S E">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="removeSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ucs-lr-P9v"/>
+                            </connections>
+                        </button>
+                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="3" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="VIs-At-ohN" userLabel="Brush Size Slider">
+                            <rect key="frame" x="41" y="173" width="206" height="31"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="W92-xz-bbd"/>
+                            </connections>
+                        </slider>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTL-4S-B0X" userLabel="Brush Preview">
+                            <rect key="frame" x="268" y="148" width="80" height="80"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brush Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-0L-T5w">
+                            <rect key="frame" x="43" y="148" width="90" height="21"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="268.5" y="355.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brush_pallet.png" width="128" height="128"/>
+        <image name="share.png" width="38" height="53"/>
+        <image name="trash_recyclebin_empty_closed.png" width="128" height="128"/>
+    </resources>
+</document>

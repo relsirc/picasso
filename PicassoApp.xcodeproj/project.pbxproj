@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5FEAB671BC4F3E300BEAF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FEAB661BC4F3E300BEAF73 /* AppDelegate.swift */; };
+		F5FEAB691BC4F3E300BEAF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FEAB681BC4F3E300BEAF73 /* ViewController.swift */; };
+		F5FEAB6C1BC4F3E300BEAF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FEAB6A1BC4F3E300BEAF73 /* Main.storyboard */; };
+		F5FEAB6E1BC4F3E300BEAF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FEAB6D1BC4F3E300BEAF73 /* Assets.xcassets */; };
+		F5FEAB711BC4F3E300BEAF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FEAB6F1BC4F3E300BEAF73 /* LaunchScreen.storyboard */; };
+		F5FEAB791BC667EB00BEAF73 /* paint_app.png in Resources */ = {isa = PBXBuildFile; fileRef = F5FEAB781BC667EB00BEAF73 /* paint_app.png */; settings = {ASSET_TAGS = (); }; };
+		F5FEAB7B1BC66B7100BEAF73 /* brush_pallet.png in Resources */ = {isa = PBXBuildFile; fileRef = F5FEAB7A1BC66B7100BEAF73 /* brush_pallet.png */; settings = {ASSET_TAGS = (); }; };
+		F5FEAB7D1BC66B8800BEAF73 /* trash_recyclebin_empty_closed.png in Resources */ = {isa = PBXBuildFile; fileRef = F5FEAB7C1BC66B8800BEAF73 /* trash_recyclebin_empty_closed.png */; settings = {ASSET_TAGS = (); }; };
+		F5FEAB801BC66DE700BEAF73 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = F5FEAB7F1BC66DE700BEAF73 /* share.png */; settings = {ASSET_TAGS = (); }; };
+		F5FEAB821BC6EC4000BEAF73 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FEAB811BC6EC4000BEAF73 /* CustomButton.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5FEAB631BC4F3E300BEAF73 /* PicassoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicassoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FEAB661BC4F3E300BEAF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5FEAB681BC4F3E300BEAF73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5FEAB6B1BC4F3E300BEAF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5FEAB6D1BC4F3E300BEAF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5FEAB701BC4F3E300BEAF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5FEAB721BC4F3E300BEAF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FEAB781BC667EB00BEAF73 /* paint_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paint_app.png; sourceTree = "<group>"; };
+		F5FEAB7A1BC66B7100BEAF73 /* brush_pallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brush_pallet.png; sourceTree = "<group>"; };
+		F5FEAB7C1BC66B8800BEAF73 /* trash_recyclebin_empty_closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash_recyclebin_empty_closed.png; sourceTree = "<group>"; };
+		F5FEAB7F1BC66DE700BEAF73 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		F5FEAB811BC6EC4000BEAF73 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5FEAB601BC4F3E300BEAF73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5FEAB5A1BC4F3E300BEAF73 = {
+			isa = PBXGroup;
+			children = (
+				F5FEAB651BC4F3E300BEAF73 /* PicassoApp */,
+				F5FEAB641BC4F3E300BEAF73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5FEAB641BC4F3E300BEAF73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5FEAB631BC4F3E300BEAF73 /* PicassoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5FEAB651BC4F3E300BEAF73 /* PicassoApp */ = {
+			isa = PBXGroup;
+			children = (
+				F5FEAB7E1BC66BF700BEAF73 /* Resources */,
+				F5FEAB661BC4F3E300BEAF73 /* AppDelegate.swift */,
+				F5FEAB681BC4F3E300BEAF73 /* ViewController.swift */,
+				F5FEAB6A1BC4F3E300BEAF73 /* Main.storyboard */,
+				F5FEAB6D1BC4F3E300BEAF73 /* Assets.xcassets */,
+				F5FEAB6F1BC4F3E300BEAF73 /* LaunchScreen.storyboard */,
+				F5FEAB721BC4F3E300BEAF73 /* Info.plist */,
+				F5FEAB811BC6EC4000BEAF73 /* CustomButton.swift */,
+			);
+			path = PicassoApp;
+			sourceTree = "<group>";
+		};
+		F5FEAB7E1BC66BF700BEAF73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5FEAB7F1BC66DE700BEAF73 /* share.png */,
+				F5FEAB7C1BC66B8800BEAF73 /* trash_recyclebin_empty_closed.png */,
+				F5FEAB7A1BC66B7100BEAF73 /* brush_pallet.png */,
+				F5FEAB781BC667EB00BEAF73 /* paint_app.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5FEAB621BC4F3E300BEAF73 /* PicassoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FEAB751BC4F3E300BEAF73 /* Build configuration list for PBXNativeTarget "PicassoApp" */;
+			buildPhases = (
+				F5FEAB5F1BC4F3E300BEAF73 /* Sources */,
+				F5FEAB601BC4F3E300BEAF73 /* Frameworks */,
+				F5FEAB611BC4F3E300BEAF73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicassoApp;
+			productName = PicassoApp;
+			productReference = F5FEAB631BC4F3E300BEAF73 /* PicassoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5FEAB5B1BC4F3E300BEAF73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Crisler;
+				TargetAttributes = {
+					F5FEAB621BC4F3E300BEAF73 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F5FEAB5E1BC4F3E300BEAF73 /* Build configuration list for PBXProject "PicassoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5FEAB5A1BC4F3E300BEAF73;
+			productRefGroup = F5FEAB641BC4F3E300BEAF73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5FEAB621BC4F3E300BEAF73 /* PicassoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5FEAB611BC4F3E300BEAF73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FEAB791BC667EB00BEAF73 /* paint_app.png in Resources */,
+				F5FEAB711BC4F3E300BEAF73 /* LaunchScreen.storyboard in Resources */,
+				F5FEAB7D1BC66B8800BEAF73 /* trash_recyclebin_empty_closed.png in Resources */,
+				F5FEAB801BC66DE700BEAF73 /* share.png in Resources */,
+				F5FEAB6E1BC4F3E300BEAF73 /* Assets.xcassets in Resources */,
+				F5FEAB6C1BC4F3E300BEAF73 /* Main.storyboard in Resources */,
+				F5FEAB7B1BC66B7100BEAF73 /* brush_pallet.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5FEAB5F1BC4F3E300BEAF73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FEAB691BC4F3E300BEAF73 /* ViewController.swift in Sources */,
+				F5FEAB671BC4F3E300BEAF73 /* AppDelegate.swift in Sources */,
+				F5FEAB821BC6EC4000BEAF73 /* CustomButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5FEAB6A1BC4F3E300BEAF73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FEAB6B1BC4F3E300BEAF73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5FEAB6F1BC4F3E300BEAF73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FEAB701BC4F3E300BEAF73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5FEAB731BC4F3E300BEAF73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5FEAB741BC4F3E300BEAF73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5FEAB761BC4F3E300BEAF73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PicassoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.relsirc.PicassoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5FEAB771BC4F3E300BEAF73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PicassoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.relsirc.PicassoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5FEAB5E1BC4F3E300BEAF73 /* Build configuration list for PBXProject "PicassoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FEAB731BC4F3E300BEAF73 /* Debug */,
+				F5FEAB741BC4F3E300BEAF73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FEAB751BC4F3E300BEAF73 /* Build configuration list for PBXNativeTarget "PicassoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FEAB761BC4F3E300BEAF73 /* Debug */,
+				F5FEAB771BC4F3E300BEAF73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5FEAB5B1BC4F3E300BEAF73 /* Project object */;
+}
